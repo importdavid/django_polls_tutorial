@@ -1,0 +1,9 @@
+Flash Pi and setup first user
+sudo update && sudo upgrade
+Set static IP address
+Set hostname
+ssh key-based authentication
+  local:
+    ssh-keygen -b 4096
+    scp ~/.ssh/id_rsa.pub {username}@{hostname}:~/.ssh/authorized_keys
+  remote
